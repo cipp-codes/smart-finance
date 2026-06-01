@@ -33,7 +33,7 @@ function Dashboard() {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`https:smart-finance-backend-production-0b0a.up.railway.app/transactions?user_id=${userId}`)
+    fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/transactions?user_id=${userId}`)
       .then((res) => res.json())
       .then((data) => setTransactions(data))
       .catch((err) => console.log(err));
