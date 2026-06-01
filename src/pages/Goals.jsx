@@ -25,7 +25,7 @@ function Goals() {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`http://localhost:5000/goals?user_id=${userId}`)
+    fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/goals?user_id=${userId}`)
       .then((res) => res.json())
       .then((data) => setGoals(data))
       .catch((err) => console.log(err));
@@ -63,7 +63,7 @@ function Goals() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/goals", {
+      const res = await fetch("https://smart-finance-backend-production-0b0a.up.railway.app/goals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ function Goals() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/goals/${id}`, {
+      await fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/goals/${id}`, {
         method: "DELETE",
       });
 
@@ -112,7 +112,7 @@ function Goals() {
     const newAmount = Number(goal.current_amount) + Number(amount);
 
     try {
-      const res = await fetch(`http://localhost:5000/goals/${id}`, {
+      const res = await fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/goals/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

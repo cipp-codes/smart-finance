@@ -33,7 +33,7 @@ function Dashboard() {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`http://localhost:5000/transactions?user_id=${userId}`)
+    fetch(`https:smart-finance-backend-production-0b0a.up.railway.app/transactions?user_id=${userId}`)
       .then((res) => res.json())
       .then((data) => setTransactions(data))
       .catch((err) => console.log(err));
@@ -44,7 +44,7 @@ function Dashboard() {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`http://localhost:5000/goals?user_id=${userId}`)
+    fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/goals?user_id=${userId}`)
       .then((res) => res.json())
       .then((data) => setGoals(data))
       .catch((err) => console.log(err));
@@ -139,7 +139,7 @@ function Dashboard() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/ai-recommendation", {
+      const res = await fetch("https://smart-finance-backend-production-0b0a.up.railway.app/ai-recommendation", {
         method: "POST",
 
         headers: {

@@ -23,7 +23,7 @@ function Register({ onBackLogin }) {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/register", {
+      const res = await fetch("https://smart-finance-backend-production-0b0a.up.railway.app/register", {
         method: "POST",
 
         headers: {

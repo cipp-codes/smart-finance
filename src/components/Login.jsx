@@ -17,7 +17,7 @@ function Login({ onLogin, onShowRegister }) {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://smart-finance-backend-production-0b0a.up.railway.app/login", {
         method: "POST",
 
         headers: {

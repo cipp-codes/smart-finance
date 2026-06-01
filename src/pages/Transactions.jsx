@@ -59,7 +59,7 @@ function Transactions() {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`http://localhost:5000/transactions?user_id=${userId}`)
+    fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/transactions?user_id=${userId}`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -76,7 +76,7 @@ function Transactions() {
   /* -------------------------------------------------------------------------- */
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://smart-finance-backend-production-0b0a.up.railway.app/categories")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -127,7 +127,7 @@ function Transactions() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/transactions", {
+      const res = await fetch("https://smart-finance-backend-production-0b0a.up.railway.app/transactions", {
         method: "POST",
 
         headers: {
@@ -159,7 +159,7 @@ function Transactions() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/transactions/${id}`, {
+      await fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/transactions/${id}`, {
         method: "DELETE",
       });
 
@@ -205,7 +205,7 @@ function Transactions() {
         category_id: editForm.type === "income" ? null : editForm.category_id,
       };
 
-      const res = await fetch(`http://localhost:5000/transactions/${editId}`, {
+      const res = await fetch(`https://smart-finance-backend-production-0b0a.up.railway.app/transactions/${editId}`, {
         method: "PUT",
 
         headers: {
