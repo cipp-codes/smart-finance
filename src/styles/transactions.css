@@ -259,32 +259,6 @@
   padding: 20px;
 }
 
-/* .edit-modal {
-  width: 100%;
-  max-width: 520px;
-  background: white;
-  border-radius: 28px;
-  padding: 28px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  animation: modalShow 0.2s ease;
-} */
-
-/* .edit-modal {
-  width: 100%;
-  max-width: 650px;
-  background: white;
-  border-radius: 24px;
-  padding: 24px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  animation: modalShow 0.2s ease;
-} */
-
 .edit-modal {
   width: 100%;
   max-width: 560px;
@@ -302,13 +276,6 @@
 
 /* HEADER */
 
-/* .modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-} */
-
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -320,11 +287,6 @@
   margin: 0;
   font-size: 24px;
 }
-
-/* .modal-header h3 {
-  margin: 0;
-  font-size: 28px;
-} */
 
 .close-modal {
   border: none;
@@ -341,23 +303,6 @@
 
 /* INPUT */
 
-/* .edit-modal input,
-.edit-modal select {
-  padding: 16px;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  font-size: 15px;
-} */
-
-/* .edit-modal input,
-.edit-modal select {
-  height: 52px;
-  padding: 0 16px;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  font-size: 15px;
-} */
-
 .edit-modal input,
 .edit-modal select {
   height: 46px;
@@ -371,13 +316,6 @@
 }
 
 /* ACTIONS */
-
-/* .modal-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  margin-top: 10px;
-} */
 
 .modal-actions {
   display: flex;
@@ -418,25 +356,6 @@
   }
 }
 
-/* .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-group label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #374151;
-} */
-
-/* .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 6px;
-} */
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -444,13 +363,7 @@
   margin-bottom: 4px;
 }
 
-/* .form-group label {
-  font-size: 15px;
-  font-weight: 600;
-  color: #374151;
-} */
-
- .form-group label {
+.form-group label {
   font-size: 14px;
   font-weight: 600;
   color: #374151;

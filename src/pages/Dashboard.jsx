@@ -22,10 +22,6 @@ function Dashboard() {
 
   const [goals, setGoals] = useState([]);
 
-  // const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
-
-  // const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
-
   const [selectedMonth, setSelectedMonth] = useState("all");
 
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
@@ -177,12 +173,6 @@ function Dashboard() {
   /*                             TRANSAKSI BULAN INI                            */
   /* -------------------------------------------------------------------------- */
 
-  // const currentMonthTransactions = transactions.filter((t) => {
-  //   const date = new Date(t.transaction_date);
-
-  //   return date.getMonth() === currentMonth && date.getFullYear() === currentYear;
-  // });
-
   const currentMonthTransactions =
     selectedMonth === "all"
       ? transactions
@@ -325,9 +315,6 @@ function Dashboard() {
         <div className="welcome-text">
           <HiMiniHandRaised className="welcome-icon" />
 
-          {/* <span>
-            Selamat datang kembali, {userName} — {currentMonthName} {currentYear}
-          </span> */}
           <span>
             Selamat datang kembali,
             {userName} — {selectedMonth === "all" ? "Semua Periode" : `${currentMonthName} ${currentYear}`}
