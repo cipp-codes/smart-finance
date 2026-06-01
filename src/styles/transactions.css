@@ -1,0 +1,564 @@
+.transactions {
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+.transactions h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    FORM                                    */
+/* -------------------------------------------------------------------------- */
+
+.form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.form input,
+.form select {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.form button {
+  background: #1e293b;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    LIST                                    */
+/* -------------------------------------------------------------------------- */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    CARD                                    */
+/* -------------------------------------------------------------------------- */
+
+.item {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* LEFT */
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ICON */
+
+.transaction-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* INFO */
+
+.transaction-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.transaction-info p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.transaction-info small {
+  color: #999;
+}
+
+/* RIGHT */
+
+.item-right {
+  text-align: right;
+}
+
+/* AMOUNT */
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.income {
+  color: #059669;
+}
+
+.expense {
+  color: #dc2626;
+}
+
+/* ACTIONS */
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.transaction-icon svg {
+  font-size: 24px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            SEARCH + DATE FILTER                            */
+/* -------------------------------------------------------------------------- */
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* DATE FILTER */
+
+.date-filter {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.date-filter input {
+  width: 170px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FILTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filter-container button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ACTIVE */
+
+.active-filter {
+  background: #1e293b !important;
+  color: white !important;
+}
+
+.active-income {
+  background: #059669;
+  color: white;
+}
+
+.active-expense {
+  background: #dc2626;
+  color: white;
+}
+
+/* COLORS */
+
+.income-filter {
+  background: #dcfce7;
+  color: #059669;
+}
+
+.expense-filter {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MODAL                                   */
+/* -------------------------------------------------------------------------- */
+
+.modal-overlay {
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+/* .edit-modal {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: modalShow 0.2s ease;
+} */
+
+/* .edit-modal {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: modalShow 0.2s ease;
+} */
+
+.edit-modal {
+  width: 100%;
+  max-width: 560px;
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  animation: modalShow 0.2s ease;
+}
+
+/* HEADER */
+
+/* .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* .modal-header h3 {
+  margin: 0;
+  font-size: 28px;
+} */
+
+.close-modal {
+  border: none;
+  background: #f3f4f6;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* INPUT */
+
+/* .edit-modal input,
+.edit-modal select {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+} */
+
+/* .edit-modal input,
+.edit-modal select {
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+} */
+
+.edit-modal input,
+.edit-modal select {
+  height: 46px;
+
+  padding: 0 14px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+}
+
+/* ACTIONS */
+
+/* .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+} */
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+  color: #111827;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #1e293b;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@keyframes modalShow {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+} */
+
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 6px;
+} */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+/* .form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+} */
+
+ .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   MOBILE                                   */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .transactions {
+    padding: 18px;
+  }
+
+  /* TITLE */
+
+  .transactions h2 {
+    font-size: 28px;
+  }
+
+  /* FORM */
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* SEARCH + DATE */
+
+  .search-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .date-filter {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .date-filter input {
+    width: 100%;
+  }
+
+  /* FILTER BUTTON */
+
+  .filter-container {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+
+  .filter-container button {
+    white-space: nowrap;
+  }
+
+  /* CARD */
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .item-left {
+    width: 100%;
+  }
+
+  .item-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .amount {
+    font-size: 22px;
+  }
+
+  .actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* MODAL EDIT */
+
+  .edit-modal {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .modal-header h3 {
+    font-size: 24px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .save-btn {
+    width: 100%;
+  }
+}
