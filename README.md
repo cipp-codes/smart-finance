@@ -1,4 +1,4 @@
-# Smart Finance V2
+# Smart Finance
 
 A modern financial management application built with React and Vite, designed to help users track, analyze, and optimize their finances.
 
