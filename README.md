@@ -1,16 +1,84 @@
-# React + Vite
+# Smart Finance V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern financial management application built with React and Vite, designed to help users track, analyze, and optimize their finances.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard**: Real-time overview of financial metrics and portfolio performance
+- **Transaction Tracking**: Record and categorize income and expenses
+- **Budget Management**: Set and monitor budgets across different spending categories
+- **Financial Analytics**: Visualize spending patterns and financial trends
+- **Portfolio Management**: Track investments and asset allocation
+- **Responsive Design**: Seamless experience across desktop and mobile devices
+- **AI Financial Insight**: Automated analysis of user financial patterns
+- **AI Recommendation System**: Personalized financial management recommendations
+- **AI Chatbot Assistant**: Answering questions regarding the user's financial condition
 
-## React Compiler
+## 🌐 Live Demo
+Smart Finance App can be accessed at:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://smart-finance-beige-five.vercel.app/
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Framework**: React
+- **Build Tool**: Vite
+- **Language**: JavaScript
+- **Styling**: CSS
+
+## 🔧 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/cipp-codes/smart-finance.git
+cd smart-finance
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## 📦 Available Scripts
+
+- `npm run dev` - Start the development server with hot module replacement (HMR)
+- `npm run build` - Build the application for production
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview the production build locally
+
+## 📁 Project Structure
+
+```
+smart-finance-v2/
+├── src/
+│   ├── components/     # Reusable React components
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom React hooks
+│   ├── utils/          # Utility functions
+│   ├── styles/         # Global styles
+│   ├── App.jsx         # Main App component
+│   └── main.jsx        # Entry point
+├── public/             # Static assets
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+├── eslint.config.js    # ESLint configuration
+└── package.json        # Project dependencies
+```
+
+## 🔗 Useful Resources
+
+- [React Documentation](https://react.dev)
+- [Vite Documentation](https://vitejs.dev)
+- [Vite React Plugin](https://github.com/vitejs/vite-plugin-react)
+- [ESLint Documentation](https://eslint.org)
+
+---
+
+**Happy coding! 💰**
